@@ -1,0 +1,1 @@
+module.exports = "This module will be included by two or more modules but will only show up in the first module's module.children";
