@@ -10,7 +10,15 @@ var firstModule = Module._cache[require.resolve(firstModulePath)];
 var secondModule = Module._cache[require.resolve(secondModulePath)];
 
 console.log('first module ' + getChildrenInfoString(firstModule));
+/* displays:
+first module has 1 children: [path/child.js]
+ */
+
+
 console.log('second module ' + getChildrenInfoString(secondModule));
+/* displays:
+second module has 0 children: []
+ */
 
 
 function getChildrenInfoString(mod) {
